@@ -1,0 +1,21 @@
+{
+	"manifest_version":2,
+	"name":"剪·爱",
+	"description":"",
+	"version":"0.1",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup":"login.html"
+	},
+	"options_page":"options.html",
+	"permissions":[
+		"contextMenus",
+		"notifications",
+		"storage" ,
+		"http://*/"
+	],
+	"background": {
+		"persistent": false,
+		"scripts": ["utf.js","CryptoJS.js","background.js"]
+  }
+}
